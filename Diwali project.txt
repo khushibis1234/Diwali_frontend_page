@@ -1,0 +1,185 @@
+ HTML CODE
+
+<div id="Parent">
+  <div id="nav-bar">
+    <div id="logo">
+      <img src="https://png.pngtree.com/png-vector/20231026/ourmid/pngtree-3d-multicolor-khushi-text-design-png-image_10366417.png" alt="">
+    </div>
+    <div id="nav-options">
+      <li>Explore</li>
+      <li>About</li>
+      <li>Help</li>
+      <li id="notificationIcon"><img src="https://cdn-icons-png.freepik.com/256/3602/3602175.png?semt=ais_hybrid" alt=""></li>
+      <li>Login</li>
+    </div>
+  </div>
+  <div id="home-page">
+    <div id="card">
+      <div id="heading">Discover your amazing <span id="giftColor">Gifts</span>  </div>
+      <div id="desc">Find great gifts to celebrate this diwali </div>
+      <div id="button">
+        <button>Diwali</button><button>Gifts</button>
+      </div>
+      <div id="search-bar"> <div id="search-img"><img src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png" alt=""></div> <input type="text" placeholder="What are you looking for this diwali ">  </div>
+    </div>
+  </div>
+</div>
+
+CSS CODE
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+    transition:all .2s ease-in-out;
+ 
+  
+}
+#Parent
+{
+  height:100%;
+  width:100%;
+ 
+}
+#nav-bar
+{
+  height:75px;
+  width:100vw;
+   background:#04090F; 
+  display:flex;
+  justify-content:space-between;
+  padding: 0px 10px;
+  border:2px solid black;
+  color:white;
+  font-family:sans-serif;
+  font-size:18px;
+}
+#logo
+{
+  height:100%;
+  width:70px;
+}
+#logo img
+{
+  width:100%;
+}
+#nav-options
+{
+  height:100%;
+  width:350px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  
+/*   margin-right:20px; */
+}
+#nav-options li
+{
+  list-style:none;
+}
+#nav-options li:hover
+{
+  border-bottom:2px solid yellow;
+  cursor:pointer;
+  transform:scale(.9);
+}
+#notificationIcon
+{
+  height:30px;
+  width:30px;
+}
+#notificationIcon img
+{
+  width:100%;
+  height:100%;
+}
+#home-page
+{
+  background-image:url("https://trix.radiantthemes.com/wp-content/uploads/2019/06/blog-image07.jpg");
+  background-size:cover;
+  background-position:center;
+  height:80vh;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#card
+{
+  height:300px;
+  width:64%;
+   background:rgba(0,0,0,.1.5);
+  text-align:center;s
+}
+#heading
+{
+  font-size:40px;
+  color:white;
+  margin-top:20px;
+  font-family:sans-serif;
+}
+#giftColor
+{
+  color:#F11A1A;
+  font-weight:bold;
+}
+#desc
+{
+  color:#FFCD00;
+  font-size:22px;
+  font-family:sans-serif;
+  margin-top:12px;
+}
+#button
+{
+  margin-top:80px;
+  width:100%;display:flex;
+     margin-left:22px;     
+}
+button:hover
+{
+  transform:scale(.9);
+   color:yellow;
+}
+button
+{
+  background:#F21A1A;
+  padding:6px 10px;
+  margin-left:2px;
+  color:white;
+  font-weight:bold;
+  border:none;
+}
+#search-bar
+{
+   width:100%;display:flex;
+     margin-left:22px;    
+ position:relative;
+}
+input
+{
+  width:70%;
+  height:30px;
+  border-radius:6px;
+  outline:none;
+  border:none;
+  color:#FAFAFA;
+  padding-left:35px;
+  color:black;
+  
+}
+#search-img
+{
+  position:absolute;
+  height:17px;
+  width:17px;
+   top:5px;
+  left:10px;
+  
+}
+#search-img img
+{
+  height:100%;
+  width:100%;
+  
+}
